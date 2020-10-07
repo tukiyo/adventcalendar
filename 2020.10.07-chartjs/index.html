@@ -5,7 +5,24 @@
 	<title>Pie Chart</title>
 	<meta charset=utf-8>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
-	<script src="utils.js"></script>
+	<script>
+		(function(global) {
+			var COLORS = [
+				'#4dc9f6',
+				'#f67019',
+				'#f53794',
+				'#537bc4',
+				'#acc236',
+				'#166a8f',
+				'#00a950',
+				'#58595b',
+				'#8549ba'
+			];
+
+			var Color = global.Color;
+
+		}(this));
+	</script>
 </head>
 
 <body>
@@ -17,7 +34,7 @@
 
 	条件絞り込みボタン
 	<button id="filter1">異性であること</button>
-	<button id="filter2">身長は171cm以上あること</button>
+	<button id="filter2">身長は平均以上であること</button>
 	<button id="filter3">都内在住 (1400万人)</button>
 	<button id="filter4">30歳代であること</button>
 	<button id="filter5">年収が平均以上であること</button>
